@@ -22,9 +22,10 @@ The cost function is constructued with repect to the Pauli-Z expectation value o
 Here, our desired outcome for each qubit is either |0> or |1>, which is equivalent to measuring Pauli-Z value of 1 and -1 respectively. Since the Pauli-Z expecttion is bound between [-1, 1], we can define our cost function as such
 
 <!-- $C = \sum_{\phi_i'=|1>}{\sigma_z\phi_i} - \sum_{\phi_i'=|0>}{\sigma_z\phi_i}$-->
-
-<center>![Equation](https://latex.codecogs.com/gif.latex?C%20%3D%20%5Csum_%7B%5Cphi_i%27%3D%7C1%3E%7D%7B%5Csigma_z%5Cphi_i%7D%20-%20%5Csum_%7B%5Cphi_i%27%3D%7C0%3E%7D%7B%5Csigma_z%5Cphi_i%7D)</center>
-
+<p align="center">
+<!--    ![Equation](https://latex.codecogs.com/gif.latex?C%20%3D%20%5Csum_%7B%5Cphi_i%27%3D%7C1%3E%7D%7B%5Csigma_z%5Cphi_i%7D%20-%20%5Csum_%7B%5Cphi_i%27%3D%7C0%3E%7D%7B%5Csigma_z%5Cphi_i%7D) -->
+   <img src="https://latex.codecogs.com/gif.latex?C%20%3D%20%5Csum_%7B%5Cphi_i%27%3D%7C1%3E%7D%7B%5Csigma_z%5Cphi_i%7D%20-%20%5Csum_%7B%5Cphi_i%27%3D%7C0%3E%7D%7B%5Csigma_z%5Cphi_i%7D"/>
+</p>
 where $\phi_i'$ is the target outcome of $\phi_i$. That is, if the target outcome of a qubit is |1>, we want to minimize its Pauli-Z expectation hence adding it to the cost function, and if the target outcome of a qubit is |0>, we want to maximize its Pauli-Z expectation hence substracting it from the cost function. 
 
 ### Different States
